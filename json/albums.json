@@ -24,5 +24,35 @@
       "description": "soundtrack",
       "imagePath": "/placeholder.svg"
     }
+  ],
+  "newReleases": [
+    {
+      "id": 1,
+      "title": "Midnight Tales",
+      "artist": "Luna Moon",
+      "songs": 12,
+      "imagePath": "/placeholder.svg"
+    },
+    {
+      "id": 2,
+      "title": "Urban Dreams",
+      "artist": "City Lights",
+      "songs": 10,
+      "imagePath": "/placeholder.svg"
+    },
+    {
+      "id": 3,
+      "title": "Summer Vibes",
+      "artist": "Beach Boys",
+      "songs": 8,
+      "imagePath": "/placeholder.svg"
+    },
+    {
+      "id": 4,
+      "title": "Electric Soul",
+      "artist": "Voltage",
+      "songs": 14,
+      "imagePath": "/placeholder.svg"
+    }
   ]
 }
