@@ -19,10 +19,10 @@ function HomePage() {
                                 </section>
                             </article>
                         ))
-                    ) : <p>No featured albums found...</p>}
+                    ) : <p className="text">No featured albums found...</p>}
                 </div>
             </main>
-            <Footer current='albums' />
+            <Footer current='featured' />
         </>
     );
 }
