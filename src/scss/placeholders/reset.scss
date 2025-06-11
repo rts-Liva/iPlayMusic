@@ -7,10 +7,15 @@
 }
 
 html {
-    font-family: system-ui, sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: root.$typeography-primary;
 }
 
 button {
     cursor: pointer;
+}
+
+main {
+    padding-inline: 1.5rem;
+    padding-bottom: 6rem;
 }
