@@ -1,0 +1,70 @@
+{
+    "list": [
+        {
+            "id": 1,
+            "cover": "/placeholder.svg",
+            "name": "Workout Mix 2024",
+            "songs": [
+                {
+                    "title": "Power Up",
+                    "artist": "The Motivators",
+                    "duration": 198
+                },
+                {
+                    "title": "Run Fast",
+                    "artist": "Energy Crew",
+                    "duration": 215
+                },
+                {
+                    "title": "Gym Time",
+                    "artist": "Fitness Beats",
+                    "duration": 184
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "cover": "/placeholder.svg",
+            "name": "Chill Vibes",
+            "songs": [
+                {
+                    "title": "Ocean Waves",
+                    "artist": "Calm Waters",
+                    "duration": 246
+                },
+                {
+                    "title": "Sunset Dreams",
+                    "artist": "Lofi Beats",
+                    "duration": 173
+                },
+                {
+                    "title": "Gentle Rain",
+                    "artist": "Nature Sounds",
+                    "duration": 292
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "cover": "/placeholder.svg",
+            "name": "Road Trip Classics",
+            "songs": [
+                {
+                    "title": "Highway Dreams",
+                    "artist": "The Travelers",
+                    "duration": 234
+                },
+                {
+                    "title": "Desert Road",
+                    "artist": "Journey Band",
+                    "duration": 256
+                },
+                {
+                    "title": "Night Drive",
+                    "artist": "Midnight Riders",
+                    "duration": 189
+                }
+            ]
+        }
+    ]
+}
