@@ -1,0 +1,28 @@
+{
+  "featuredAlbums": [
+    {
+      "id": 1,
+      "title": "Midnight Tales",
+      "description": "soundtrack",
+      "imagePath": "/placeholder.svg"
+    },
+    {
+      "id": 2,
+      "title": "Urban Dreams",
+      "description": "soundtrack",
+      "imagePath": "/placeholder.svg"
+    },
+    {
+      "id": 3,
+      "title": "Summer Vibes",
+      "description": "soundtrack",
+      "imagePath": "/placeholder.svg"
+    },
+    {
+      "id": 4,
+      "title": "Electric Soul",
+      "description": "soundtrack",
+      "imagePath": "/placeholder.svg"
+    }
+  ]
+}
