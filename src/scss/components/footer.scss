@@ -20,7 +20,7 @@
             color: root.$accent-pink;
 
             &.featured {
-                color: root.$primary-white;
+                color: root.$primary-white !important;
                 background: linear-gradient(to right, root.$accent-pink, root.$accent-orange);
                 padding: .3rem;
                 border-radius: 50%;
