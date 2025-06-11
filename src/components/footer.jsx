@@ -1,27 +1,33 @@
 import { BiCategory } from "react-icons/bi";
-import { FaCircleHalfStroke } from "react-icons/fa6";
-import { IoIosAlbums, IoMdWifi } from "react-icons/io";
-import { PiPlaylist } from "react-icons/pi";
+import { FaCircleHalfStroke, FaCompactDisc } from "react-icons/fa6";
+import { GiSoundWaves } from "react-icons/gi";
+import { MdLibraryMusic } from "react-icons/md";
 import { Link } from "react-router";
 
 function Footer({ current }) {
     return (
         <footer className="footer">
             <nav>
+                <svg width='0' height='0'>
+                    <linearGradient id="gradient" x1='0%' y1='0%' x2='100%' y2='0%'>
+                        <stop stopColor="#EE0979" offset='0%' />
+                        <stop stopColor="#F2BC06" offset='100%' />
+                    </linearGradient>
+                </svg>
                 <ul className="footer-menu">
                     <li>
                         <Link to='/albums'>
-                            <IoIosAlbums className={current === 'albums' ? 'footer-menu__icon active' : 'footer-menu__icon'} />
+                            <FaCompactDisc className={current === 'albums' ? 'footer-menu__icon active' : 'footer-menu__icon'} />
                         </Link>
                     </li>
                     <li>
                         <Link to='/playlists'>
-                            <PiPlaylist className={current === 'playlists' ? 'footer-menu__icon active' : 'footer-menu__icon'} />
+                            <MdLibraryMusic className={current === 'playlists' ? 'footer-menu__icon active' : 'footer-menu__icon'} />
                         </Link>
                     </li>
                     <li>
                         <Link to='/'>
-                            <IoMdWifi className={current === 'featured' ? 'footer-menu__icon featured active' : 'footer-menu__icon featured'} />
+                            <GiSoundWaves className={current === 'featured' ? 'footer-menu__icon featured active' : 'footer-menu__icon featured'} />
                         </Link>
                     </li>
                     <li>

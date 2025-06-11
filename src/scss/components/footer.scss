@@ -17,10 +17,10 @@
 
         &__icon {
             font-size: 1.5em;
-            color: root.$accent-pink;
+            fill: url(#gradient);
 
             &.featured {
-                color: root.$primary-white !important;
+                fill: root.$primary-white !important;
                 background: linear-gradient(to right, root.$accent-pink, root.$accent-orange);
                 padding: .3rem;
                 border-radius: 50%;
@@ -28,7 +28,7 @@
             }
 
             &.active {
-                color: root.$primary-black;
+                fill: root.$primary-black;
             }
         }
     }
