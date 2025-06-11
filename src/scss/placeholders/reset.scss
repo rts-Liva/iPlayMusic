@@ -1,0 +1,16 @@
+@use './root.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: system-ui, sans-serif;
+    color: root.$typeography-primary;
+}
+
+button {
+    cursor: pointer;
+}
