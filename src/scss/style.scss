@@ -1,7 +1,9 @@
 @use '../fonts/fonts.scss';
 @use './placeholders/reset.scss';
 
+@use './pages/featured.scss';
+@use './pages/albums.scss';
+
 @use './components/header.scss';
 @use './components/defaults.scss';
-@use './components/albums.scss';
 @use './components/footer.scss';
