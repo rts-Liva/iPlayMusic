@@ -1,0 +1,130 @@
+{
+  "songs": [
+    {
+      "id": 1,
+      "cover": "/placeholder.svg",
+      "title": "Power Up",
+      "artist": "The Motivators",
+      "duration": 198
+    },
+    {
+      "id": 2,
+      "cover": "/placeholder.svg",
+      "title": "Run Fast",
+      "artist": "Energy Crew",
+      "duration": 215
+    },
+    {
+      "id": 3,
+      "cover": "/placeholder.svg",
+      "title": "Gym Time",
+      "artist": "Fitness Beats",
+      "duration": 184
+    },
+    {
+      "id": 4,
+      "cover": "/placeholder.svg",
+      "title": "Ocean Waves",
+      "artist": "Calm Waters",
+      "duration": 246
+    },
+    {
+      "id": 5,
+      "cover": "/placeholder.svg",
+      "title": "Sunset Dreams",
+      "artist": "Lofi Beats",
+      "duration": 173
+    },
+    {
+      "id": 6,
+      "cover": "/placeholder.svg",
+      "title": "Gentle Rain",
+      "artist": "Nature Sounds",
+      "duration": 292
+    },
+    {
+      "id": 7,
+      "cover": "/placeholder.svg",
+      "title": "Highway Dreams",
+      "artist": "The Travelers",
+      "duration": 234
+    },
+    {
+      "id": 8,
+      "cover": "/placeholder.svg",
+      "title": "Desert Road",
+      "artist": "Journey Band",
+      "duration": 256
+    },
+    {
+      "id": 9,
+      "cover": "/placeholder.svg",
+      "title": "Night Drive",
+      "artist": "Midnight Riders",
+      "duration": 189
+    },
+    {
+      "id": 10,
+      "cover": "/placeholder.svg",
+      "title": "Beach Party",
+      "artist": "Sunny Vibes",
+      "duration": 203
+    },
+    {
+      "id": 11,
+      "cover": "/placeholder.svg",
+      "title": "Summer Nights",
+      "artist": "Tropical Dreams",
+      "duration": 195
+    },
+    {
+      "id": 12,
+      "cover": "/placeholder.svg",
+      "title": "Poolside",
+      "artist": "The Wave Makers",
+      "duration": 218
+    },
+    {
+      "id": 13,
+      "cover": "/placeholder.svg",
+      "title": "Moonlit Path",
+      "artist": "Luna Dreams",
+      "duration": 245
+    },
+    {
+      "id": 14,
+      "cover": "/placeholder.svg",
+      "title": "Night Walker",
+      "artist": "Shadow Beat",
+      "duration": 198
+    },
+    {
+      "id": 15,
+      "cover": "/placeholder.svg",
+      "title": "Starlight Melody",
+      "artist": "Cosmic Flow",
+      "duration": 276
+    },
+    {
+      "id": 16,
+      "cover": "/placeholder.svg",
+      "title": "Digital Wasteland",
+      "artist": "Cyber Punk",
+      "duration": 245
+    },
+    {
+      "id": 17,
+      "cover": "/placeholder.svg",
+      "title": "Chrome Hearts",
+      "artist": "Cyber Punk",
+      "duration": 223
+    },
+    {
+      "id": 18,
+      "cover": "/placeholder.svg",
+      "title": "Deep Currents",
+      "artist": "Deep Blue",
+      "duration": 345
+    }
+  ]
+}
