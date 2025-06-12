@@ -1,6 +1,7 @@
 import Header from "../components/header";
 import albums from "../../json/albums.json";
 import Footer from "../components/footer";
+import { Link } from "react-router";
 
 function AlbumsPage() {
     return (
@@ -16,11 +17,12 @@ function AlbumsPage() {
                     <div className="album-slider">
                         {albums?.featuredAlbums?.length > 0 ? (
                             albums?.featuredAlbums?.map(album => (
-                                <img
-                                    src={album.imagePath}
-                                    alt={`${album.title} cover`}
-                                    key={album.id}
-                                    className="album-slider__cover" />
+                                <Link to={`/album/${album.id}`} key={album.id}>
+                                    <img
+                                        src={album.imagePath}
+                                        alt={`${album.title} cover`}
+                                        className="album-slider__cover" />
+                                </Link>
                             ))
                         ) : <p className="text">No featured albums found...</p>}
                     </div>
@@ -33,17 +35,19 @@ function AlbumsPage() {
                     <div className="album-list">
                         {albums?.newReleases?.length > 0 ? (
                             albums?.newReleases?.map(album => (
-                                <article key={album.id} className="album-list-card">
-                                    <img
-                                        src={album.imagePath}
-                                        alt={`${album.title} cover`}
-                                        className="album-list-card__cover" />
-                                    <div>
-                                        <h4 className="sub-heading">{album.title}</h4>
-                                        <p className="text">{album.artist}</p>
-                                    </div>
-                                    <p className="text album-list-card__text">{album.songs} songs</p>
-                                </article>
+                                <Link to={`/album/${album.id}`} key={album.id}>
+                                    <article className="album-list-card">
+                                        <img
+                                            src={album.imagePath}
+                                            alt={`${album.title} cover`}
+                                            className="album-list-card__cover" />
+                                        <div>
+                                            <h4 className="sub-heading">{album.title}</h4>
+                                            <p className="text">{album.artist}</p>
+                                        </div>
+                                        <p className="text album-list-card__text">{album.songs} songs</p>
+                                    </article>
+                                </Link>
                             ))
                         ) : <p className="text">No new releases found...</p>}
                     </div>
