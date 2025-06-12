@@ -7,8 +7,8 @@
     text-transform: capitalize;
 
     &--gradient {
-        background: linear-gradient(to right, root.$accent-pink, root.$accent-orange);
-        background: -webkit-linear-gradient(to right, root.$accent-pink, root.$accent-orange);
+        background: root.$gradient;
+        -webkit-background: root.$gradient;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
