@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 function HomePage() {
     return (
         <>
-            <Header>featured</Header>
+            <Header navigateReturn={false}>featured</Header>
             <main>
                 <h2 className="heading heading--gradient">featured</h2>
                 <div className="featured-album">

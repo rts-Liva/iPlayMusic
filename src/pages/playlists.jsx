@@ -42,7 +42,7 @@ function PlayListsPage() {
 
     return (
         <>
-            <Header colour="light">playlists</Header>
+            <Header colour="light" navigateReturn={false}>playlists</Header>
             <img src="/background.svg" alt="colourful background" className="background" />
             <main className="playlist">
                 <h2 className="heading">playlists</h2>

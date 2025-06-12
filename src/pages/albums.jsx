@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 function AlbumsPage() {
     return (
         <>
-            <Header>music</Header>
+            <Header navigateReturn={false}>music</Header>
             <main>
                 <h2 className="heading heading--gradient">all albums</h2>
                 <div>
