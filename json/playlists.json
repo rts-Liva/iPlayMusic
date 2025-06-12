@@ -6,16 +6,19 @@
             "name": "Workout Mix 2024",
             "songs": [
                 {
+                    "id": 1,
                     "title": "Power Up",
                     "artist": "The Motivators",
                     "duration": 198
                 },
                 {
+                    "id": 2,
                     "title": "Run Fast",
                     "artist": "Energy Crew",
                     "duration": 215
                 },
                 {
+                    "id": 3,
                     "title": "Gym Time",
                     "artist": "Fitness Beats",
                     "duration": 184
@@ -28,16 +31,19 @@
             "name": "Chill Vibes",
             "songs": [
                 {
+                    "id": 4,
                     "title": "Ocean Waves",
                     "artist": "Calm Waters",
                     "duration": 246
                 },
                 {
+                    "id": 5,
                     "title": "Sunset Dreams",
                     "artist": "Lofi Beats",
                     "duration": 173
                 },
                 {
+                    "id": 6,
                     "title": "Gentle Rain",
                     "artist": "Nature Sounds",
                     "duration": 292
@@ -50,16 +56,19 @@
             "name": "Road Trip Classics",
             "songs": [
                 {
+                    "id": 7,
                     "title": "Highway Dreams",
                     "artist": "The Travelers",
                     "duration": 234
                 },
                 {
+                    "id": 8,
                     "title": "Desert Road",
                     "artist": "Journey Band",
                     "duration": 256
                 },
                 {
+                    "id": 9,
                     "title": "Night Drive",
                     "artist": "Midnight Riders",
                     "duration": 189
@@ -72,16 +81,19 @@
             "name": "Summer Hits",
             "songs": [
                 {
+                    "id": 10,
                     "title": "Beach Party",
                     "artist": "Sunny Vibes",
                     "duration": 203
                 },
                 {
+                    "id": 11,
                     "title": "Summer Nights",
                     "artist": "Tropical Dreams",
                     "duration": 195
                 },
                 {
+                    "id": 12,
                     "title": "Poolside",
                     "artist": "The Wave Makers",
                     "duration": 218

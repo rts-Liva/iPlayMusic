@@ -8,16 +8,19 @@
       "genres": ["Electronic", "Ambient"],
       "songs": [
         {
+          "id": 13,
           "title": "Moonlit Path",
           "artist": "Luna Dreams",
           "duration": 245
         },
         {
+          "id": 14,
           "title": "Night Walker",
           "artist": "Shadow Beat",
           "duration": 198
         },
         {
+          "id": 15,
           "title": "Starlight Melody",
           "artist": "Cosmic Flow",
           "duration": 276
@@ -32,16 +35,19 @@
       "genres": ["Hip-Hop/Rap", "Electronic"],
       "songs": [
         {
+          "id": 19,
           "title": "City Lights",
           "artist": "Metro Beats",
           "duration": 223
         },
         {
+          "id": 20,
           "title": "Neon Street",
           "artist": "Urban Flow",
           "duration": 189
         },
         {
+          "id": 21,
           "title": "Downtown Groove",
           "artist": "City Soul",
           "duration": 234
@@ -56,16 +62,19 @@
       "genres": ["Dance", "Electronic"],
       "songs": [
         {
+          "id": 22,
           "title": "Beach Party",
           "artist": "Sun Collective",
           "duration": 198
         },
         {
+          "id": 23,
           "title": "Tropical Heat",
           "artist": "Wave Riders",
           "duration": 215
         },
         {
+          "id": 24,
           "title": "Sunset Dreams",
           "artist": "Paradise DJs",
           "duration": 243
@@ -80,16 +89,19 @@
       "genres": ["Electronic", "Dance"],
       "songs": [
         {
+          "id": 25,
           "title": "Digital Love",
           "artist": "Volt Masters",
           "duration": 267
         },
         {
+          "id": 26,
           "title": "Circuit Dreams",
           "artist": "Tech Groove",
           "duration": 234
         },
         {
+          "id": 27,
           "title": "Static Heart",
           "artist": "Binary Soul",
           "duration": 198
@@ -104,16 +116,19 @@
       "genres": ["Electronic", "Industrial"],
       "songs": [
         {
+          "id": 16,
           "title": "Digital Wasteland",
           "artist": "Cyber Punk",
           "duration": 245
         },
         {
+          "id": 17,
           "title": "Chrome Hearts",
           "artist": "Cyber Punk",
           "duration": 223
         },
         {
+          "id": 28,
           "title": "Binary Sunset",
           "artist": "Cyber Punk",
           "duration": 289
@@ -128,16 +143,19 @@
       "genres": ["Alternative", "World"],
       "songs": [
         {
+          "id": 29,
           "title": "Dune Walker",
           "artist": "Sahara Sound",
           "duration": 312
         },
         {
+          "id": 30,
           "title": "Oasis Dreams",
           "artist": "Sahara Sound",
           "duration": 267
         },
         {
+          "id": 31,
           "title": "Sand Storm",
           "artist": "Sahara Sound",
           "duration": 289
@@ -152,16 +170,19 @@
       "genres": ["Electronic", "Ambient"],
       "songs": [
         {
+          "id": 18,
           "title": "Deep Currents",
           "artist": "Deep Blue",
           "duration": 345
         },
         {
+          "id": 32,
           "title": "Coral Dreams",
           "artist": "Deep Blue",
           "duration": 298
         },
         {
+          "id": 33,
           "title": "Tidal Memories",
           "artist": "Deep Blue",
           "duration": 276
@@ -176,16 +197,19 @@
       "genres": ["Alternative", "Classical"],
       "songs": [
         {
+          "id": 34,
           "title": "Summit View",
           "artist": "Alpine Band",
           "duration": 267
         },
         {
+          "id": 35,
           "title": "Valley Morning",
           "artist": "Alpine Band",
           "duration": 289
         },
         {
+          "id": 36,
           "title": "Peak Experience",
           "artist": "Alpine Band",
           "duration": 312
