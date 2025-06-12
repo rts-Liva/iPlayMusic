@@ -2,12 +2,13 @@ import { useRef, useState } from "react";
 import Header from "../components/header";
 import playlists from "../../json/playlists.json";
 import Footer from "../components/footer";
+import { FaPlay } from "react-icons/fa6";
 
 function PlayListsPage() {
     const [touchStart, setTouchStart] = useState(null);
     const [touchEnd, setTouchEnd] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(1);
     const sliderRef = useRef(null);
-    const [activeIndex, setActiveIndex] = useState(0);
 
     // Minimum swipe distance (in px)
     const minSwipeDistance = 20;
@@ -40,10 +41,24 @@ function PlayListsPage() {
         setTouchEnd(null);
     };
 
+    const playlist = playlists?.list[activeIndex];
+
+    function calculateDuration(duration) {
+        // Converts seconds into minutes.
+        const durationInMinutes = duration / 60;
+        // Grabs only the full minute (ignores decimals)
+        const minutes = Math.trunc(durationInMinutes);
+        // Converts the leftover decimals back into seconds.
+        const seconds = Math.round((durationInMinutes - minutes) * 60);
+
+        // padStart makes sure there will always be 2 digits (m:06 rather than m:6)
+        return `${minutes}:${seconds.toString().padStart(2, '0')}`;
+    }
+
     return (
         <>
             <Header colour="light" navigateReturn={false}>playlists</Header>
-            <img src="/background.svg" alt="colourful background" className="background" />
+            <div className="background"></div>
             <main className="playlist">
                 <h2 className="heading">playlists</h2>
                 <div
@@ -59,10 +74,28 @@ function PlayListsPage() {
                                 src={playlist.cover}
                                 alt={`${playlist.name} cover`}
                                 key={playlist.id}
-                                className={`playlist-slider__cover ${index === activeIndex ? 'active' : ''}`} />
+                                className={`playlist-slider__cover ${index === activeIndex ? 'active' : index < activeIndex ? 'prev' : 'next'}`} />
                         ))
                     ) : <p className="text">No playlists found...</p>}
                 </div>
+                <section className="playlist-info">
+                    <h3 className="playlist-info__name">{playlist.name}</h3>
+                    <div className="album-list">
+                        {playlist.songs.length > 0 ? (
+                            playlist.songs.map((song, index) => (
+                                <article key={index} className="album-list-card">
+                                    <FaPlay className="playlist-info__icon" />
+                                    <div>
+                                        <h4 className="sub-heading">{song.title}</h4>
+                                        <p className="text">{song.artist}</p>
+                                    </div>
+                                    <p className="text album-list-card__text">{calculateDuration(song.duration)}</p>
+                                </article>
+                            ))
+                        ) : <p className='text'>No songs found...</p>}
+                    </div>
+                    <button className="playlist-info__btn">listen all</button>
+                </section>
             </main>
             <Footer current='playlists' />
         </>
