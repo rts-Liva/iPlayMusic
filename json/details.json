@@ -1,0 +1,196 @@
+{
+  "albums": [
+    {
+      "id": 1,
+      "title": "Midnight Tales",
+      "artist": "Nocturnal Symphony",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Electronic", "Ambient"],
+      "songs": [
+        {
+          "title": "Moonlit Path",
+          "artist": "Luna Dreams",
+          "duration": 245
+        },
+        {
+          "title": "Night Walker",
+          "artist": "Shadow Beat",
+          "duration": 198
+        },
+        {
+          "title": "Starlight Melody",
+          "artist": "Cosmic Flow",
+          "duration": 276
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Urban Dreams",
+      "artist": "City Collective",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Hip-Hop/Rap", "Electronic"],
+      "songs": [
+        {
+          "title": "City Lights",
+          "artist": "Metro Beats",
+          "duration": 223
+        },
+        {
+          "title": "Neon Street",
+          "artist": "Urban Flow",
+          "duration": 189
+        },
+        {
+          "title": "Downtown Groove",
+          "artist": "City Soul",
+          "duration": 234
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Summer Vibes",
+      "artist": "Sunshine Ensemble",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Dance", "Electronic"],
+      "songs": [
+        {
+          "title": "Beach Party",
+          "artist": "Sun Collective",
+          "duration": 198
+        },
+        {
+          "title": "Tropical Heat",
+          "artist": "Wave Riders",
+          "duration": 215
+        },
+        {
+          "title": "Sunset Dreams",
+          "artist": "Paradise DJs",
+          "duration": 243
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Electric Soul",
+      "artist": "Voltage Crew",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Electronic", "Dance"],
+      "songs": [
+        {
+          "title": "Digital Love",
+          "artist": "Volt Masters",
+          "duration": 267
+        },
+        {
+          "title": "Circuit Dreams",
+          "artist": "Tech Groove",
+          "duration": 234
+        },
+        {
+          "title": "Static Heart",
+          "artist": "Binary Soul",
+          "duration": 198
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Neon Nights",
+      "artist": "Cyber Punk",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Electronic", "Industrial"],
+      "songs": [
+        {
+          "title": "Digital Wasteland",
+          "artist": "Cyber Punk",
+          "duration": 245
+        },
+        {
+          "title": "Chrome Hearts",
+          "artist": "Cyber Punk",
+          "duration": 223
+        },
+        {
+          "title": "Binary Sunset",
+          "artist": "Cyber Punk",
+          "duration": 289
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Desert Wind",
+      "artist": "Sahara Sound",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Alternative", "World"],
+      "songs": [
+        {
+          "title": "Dune Walker",
+          "artist": "Sahara Sound",
+          "duration": 312
+        },
+        {
+          "title": "Oasis Dreams",
+          "artist": "Sahara Sound",
+          "duration": 267
+        },
+        {
+          "title": "Sand Storm",
+          "artist": "Sahara Sound",
+          "duration": 289
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Ocean Waves",
+      "artist": "Deep Blue",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Electronic", "Ambient"],
+      "songs": [
+        {
+          "title": "Deep Currents",
+          "artist": "Deep Blue",
+          "duration": 345
+        },
+        {
+          "title": "Coral Dreams",
+          "artist": "Deep Blue",
+          "duration": 298
+        },
+        {
+          "title": "Tidal Memories",
+          "artist": "Deep Blue",
+          "duration": 276
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Mountain Echo",
+      "artist": "Alpine Band",
+      "imagePath": "/placeholder.svg",
+      "genres": ["Alternative", "Classical"],
+      "songs": [
+        {
+          "title": "Summit View",
+          "artist": "Alpine Band",
+          "duration": 267
+        },
+        {
+          "title": "Valley Morning",
+          "artist": "Alpine Band",
+          "duration": 289
+        },
+        {
+          "title": "Peak Experience",
+          "artist": "Alpine Band",
+          "duration": 312
+        }
+      ]
+    }
+  ]
+}
