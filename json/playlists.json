@@ -65,6 +65,28 @@
                     "duration": 189
                 }
             ]
+        },
+        {
+            "id": 4,
+            "cover": "/placeholder.svg",
+            "name": "Summer Hits",
+            "songs": [
+                {
+                    "title": "Beach Party",
+                    "artist": "Sunny Vibes",
+                    "duration": 203
+                },
+                {
+                    "title": "Summer Nights",
+                    "artist": "Tropical Dreams",
+                    "duration": 195
+                },
+                {
+                    "title": "Poolside",
+                    "artist": "The Wave Makers",
+                    "duration": 218
+                }
+            ]
         }
     ]
 }
