@@ -16,11 +16,11 @@
             color: root.$primary-white;
         }
 
-        &:first-of-type {
+        &:first-child {
             justify-self: start;
         }
 
-        &:last-of-type {
+        &:last-child {
             justify-self: end;
         }
     }
