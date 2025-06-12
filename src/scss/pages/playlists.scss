@@ -15,7 +15,7 @@
 .playlist {
     padding-inline: 0;
 
-    .heading {
+    .playlist-info, .heading {
         margin-inline: 1.5rem;
     }
 
@@ -64,7 +64,6 @@
 
     &-info {
         margin-top: 1rem;
-        margin-inline: 1.5rem;
 
         &__name {
             text-align: center;
