@@ -12,7 +12,7 @@ function CategoriesPage() {
                 <div className="genre-list">
                     {genres?.genres.length > 0 ? (
                         genres?.genres.map(genre => (
-                            <details name="genres" key={genre.id}>
+                            <details className="genre-list__details" name="genres" key={genre.id}>
                                 <summary className="genre-list__name">{genre.name}</summary>
                                 {genre.subgenres.length > 0 ? (
                                     genre.subgenres.map((subgenre, index) => (
