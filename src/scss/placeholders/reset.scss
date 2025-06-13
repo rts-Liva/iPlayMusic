@@ -9,6 +9,10 @@
 html {
     font-family: 'Poppins', sans-serif;
     color: root.$typeography-primary;
+
+    &:has(body.darkmode) {
+        color: root.$typeography-secondary;
+    }
 }
 
 button {
@@ -24,4 +28,13 @@ a {
 main {
     padding-inline: 1.5rem;
     padding-bottom: 6rem;
+}
+
+body {
+    background-color: root.$primary-white;
+    transition: 300ms;
+
+    &.darkmode {
+        background-color: root.$primary-black;
+    }
 }

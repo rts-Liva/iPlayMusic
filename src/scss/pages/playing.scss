@@ -1,5 +1,9 @@
 @use '../placeholders/root.scss';
 
+body.darkmode .music-control__btn {
+    fill: root.$primary-white;
+}
+
 .music {
     display: flex;
     flex-direction: column;

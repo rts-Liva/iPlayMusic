@@ -12,6 +12,10 @@ $accent-colours: (
     9: root.$accent-dark-blue
 );
 
+body.darkmode .genre-list__subgenre-icon {
+    color: root.$primary-white;
+}
+
 .genre {
     &-list {
         margin-top: 1rem;

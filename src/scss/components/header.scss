@@ -1,5 +1,15 @@
 @use '../placeholders/root.scss';
 
+body.darkmode .header {
+    &__icon {
+        color: root.$primary-white;
+    }
+
+    &__title {
+        color: root.$typeography-secondary;
+    }
+}
+
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -29,7 +39,6 @@
         font-size: 1em;
         font-weight: 300;
         text-transform: uppercase;
-        color: root.$typeography-primary;
         grid-column: 2;
 
         &--light {
