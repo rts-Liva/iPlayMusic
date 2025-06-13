@@ -35,6 +35,7 @@
             &:first-of-type {
                 justify-self: start;
             }
+
             &:last-of-type {
                 justify-self: end;
             }
@@ -45,7 +46,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        gap: 1rem;
+        gap: 1.5rem;
 
         &__btn {
             font-size: 1.5em;
@@ -57,10 +58,11 @@
 
             &--center {
                 fill: root.$primary-white;
+                font-size: 4.5em;
                 background: root.$gradient;
-                padding: .8rem;
+                padding: 1rem .2rem;
+                padding-left: .6rem;
                 border-radius: 50%;
-                font-size: 4em;
             }
         }
     }
