@@ -1,7 +1,8 @@
+import { Link } from "react-router";
 import Header from "../components/header";
 import albums from "../../json/albums.json";
 import Footer from "../components/footer";
-import { Link } from "react-router";
+import Player from "../components/player";
 
 function HomePage() {
     return (
@@ -25,6 +26,7 @@ function HomePage() {
                     ) : <p className="text">No featured albums found...</p>}
                 </div>
             </main>
+            <Player />
             <Footer current='featured' />
         </>
     );

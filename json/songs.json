@@ -125,6 +125,132 @@
       "title": "Deep Currents",
       "artist": "Deep Blue",
       "duration": 345
+    },
+    {
+      "id": 19,
+      "cover": "/placeholder.svg",
+      "title": "City Lights",
+      "artist": "Metro Beats",
+      "duration": 223
+    },
+    {
+      "id": 20,
+      "cover": "/placeholder.svg",
+      "title": "Neon Street",
+      "artist": "Urban Flow",
+      "duration": 189
+    },
+    {
+      "id": 21,
+      "cover": "/placeholder.svg",
+      "title": "Downtown Groove",
+      "artist": "City Soul",
+      "duration": 234
+    },
+    {
+      "id": 22,
+      "cover": "/placeholder.svg",
+      "title": "Beach Party",
+      "artist": "Sun Collective",
+      "duration": 198
+    },
+    {
+      "id": 23,
+      "cover": "/placeholder.svg",
+      "title": "Tropical Heat",
+      "artist": "Wave Riders",
+      "duration": 215
+    },
+    {
+      "id": 24,
+      "cover": "/placeholder.svg",
+      "title": "Sunset Dreams",
+      "artist": "Paradise DJs",
+      "duration": 243
+    },
+    {
+      "id": 25,
+      "cover": "/placeholder.svg",
+      "title": "Digital Love",
+      "artist": "Volt Masters",
+      "duration": 267
+    },
+    {
+      "id": 26,
+      "cover": "/placeholder.svg",
+      "title": "Circuit Dreams",
+      "artist": "Tech Groove",
+      "duration": 234
+    },
+    {
+      "id": 27,
+      "cover": "/placeholder.svg",
+      "title": "Static Heart",
+      "artist": "Binary Soul",
+      "duration": 198
+    },
+    {
+      "id": 28,
+      "cover": "/placeholder.svg",
+      "title": "Binary Sunset",
+      "artist": "Cyber Punk",
+      "duration": 289
+    },
+    {
+      "id": 29,
+      "cover": "/placeholder.svg",
+      "title": "Dune Walker",
+      "artist": "Sahara Sound",
+      "duration": 312
+    },
+    {
+      "id": 30,
+      "cover": "/placeholder.svg",
+      "title": "Oasis Dreams",
+      "artist": "Sahara Sound",
+      "duration": 267
+    },
+    {
+      "id": 31,
+      "cover": "/placeholder.svg",
+      "title": "Sand Storm",
+      "artist": "Sahara Sound",
+      "duration": 289
+    },
+    {
+      "id": 32,
+      "cover": "/placeholder.svg",
+      "title": "Coral Dreams",
+      "artist": "Deep Blue",
+      "duration": 298
+    },
+    {
+      "id": 33,
+      "cover": "/placeholder.svg",
+      "title": "Tidal Memories",
+      "artist": "Deep Blue",
+      "duration": 276
+    },
+    {
+      "id": 34,
+      "cover": "/placeholder.svg",
+      "title": "Summit View",
+      "artist": "Alpine Band",
+      "duration": 267
+    },
+    {
+      "id": 35,
+      "cover": "/placeholder.svg",
+      "title": "Valley Morning",
+      "artist": "Alpine Band",
+      "duration": 289
+    },
+    {
+      "id": 36,
+      "cover": "/placeholder.svg",
+      "title": "Peak Experience",
+      "artist": "Alpine Band",
+      "duration": 312
     }
   ]
 }

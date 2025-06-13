@@ -1,11 +1,14 @@
-import { Link, useParams } from "react-router";
+import { useParams } from "react-router";
 import { FaPlay } from "react-icons/fa6";
 import Header from "../../components/header";
 import details from "../../../json/details.json";
 import Footer from "../../components/footer";
 import CalculateDuration from "../../components/calculate-duration";
+import Player from "../../components/player";
+import { useState } from "react";
 
 function AlbumDetailsPage() {
+    const [playingSong, setPlayingSong] = useState();
     const { id } = useParams();
     const album = details?.albums[id - 1];
 
@@ -35,21 +38,20 @@ function AlbumDetailsPage() {
                     <div className="album-list">
                         {album.songs.length > 0 ? (
                             album.songs.map(song => (
-                                <Link to={`/playing/${song.id}`} key={song.id}>
-                                    <article className="album-list-card">
-                                        <FaPlay className="playlist-info__icon" />
-                                        <div>
-                                            <h4 className="sub-heading">{song.title}</h4>
-                                            <p className="text">{song.artist}</p>
-                                        </div>
-                                        <p className="text album-list-card__text">{CalculateDuration(song.duration)}</p>
-                                    </article>
-                                </Link>
+                                <article className="album-list-card" onClick={() => localStorage.setItem('playing', song.id)} key={song.id}>
+                                    <FaPlay className="playlist-info__icon" />
+                                    <div>
+                                        <h4 className="sub-heading">{song.title}</h4>
+                                        <p className="text">{song.artist}</p>
+                                    </div>
+                                    <p className="text album-list-card__text">{CalculateDuration(song.duration)}</p>
+                                </article>
                             ))
                         ) : <p className='text'>No songs found...</p>}
                     </div>
                 </section>
             </main>
+            <Player />
             <Footer current='albums' />
         </>
     );

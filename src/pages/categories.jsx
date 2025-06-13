@@ -2,6 +2,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import Header from "../components/header";
 import genres from "../../json/genres.json";
 import Footer from "../components/footer";
+import Player from "../components/player";
 
 function CategoriesPage() {
     return (
@@ -27,6 +28,7 @@ function CategoriesPage() {
                     ) : <p className='text'>No categories found...</p>}
                 </div>
             </main>
+            <Player />
             <Footer current='categories' />
         </>
     );

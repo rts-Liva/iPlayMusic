@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import Header from "../components/header";
 import albums from "../../json/albums.json";
 import Footer from "../components/footer";
+import Player from "../components/player";
 
 function AlbumsPage() {
     return (
@@ -53,6 +54,7 @@ function AlbumsPage() {
                     </div>
                 </div>
             </main>
+            <Player />
             <Footer current='albums' />
         </>
     );
