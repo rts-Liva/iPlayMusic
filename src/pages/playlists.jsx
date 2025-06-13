@@ -3,6 +3,7 @@ import Header from "../components/header";
 import playlists from "../../json/playlists.json";
 import Footer from "../components/footer";
 import { FaPlay } from "react-icons/fa6";
+import { Link } from "react-router";
 
 function PlayListsPage() {
     const [touchStart, setTouchStart] = useState(null);
@@ -82,15 +83,17 @@ function PlayListsPage() {
                     <h3 className="playlist-info__name">{playlist.name}</h3>
                     <div className="album-list">
                         {playlist.songs.length > 0 ? (
-                            playlist.songs.map((song, index) => (
-                                <article key={index} className="album-list-card">
-                                    <FaPlay className="playlist-info__icon" />
-                                    <div>
-                                        <h4 className="sub-heading">{song.title}</h4>
-                                        <p className="text">{song.artist}</p>
-                                    </div>
-                                    <p className="text album-list-card__text">{calculateDuration(song.duration)}</p>
-                                </article>
+                            playlist.songs.map(song => (
+                                <Link to={`/playing/${song.id}`} key={song.id}>
+                                    <article className="album-list-card">
+                                        <FaPlay className="playlist-info__icon" />
+                                        <div>
+                                            <h4 className="sub-heading">{song.title}</h4>
+                                            <p className="text">{song.artist}</p>
+                                        </div>
+                                        <p className="text album-list-card__text">{calculateDuration(song.duration)}</p>
+                                    </article>
+                                </Link>
                             ))
                         ) : <p className='text'>No songs found...</p>}
                     </div>

@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { FaPlay } from "react-icons/fa6";
 import Header from "../../components/header";
 import details from "../../../json/details.json";
@@ -45,15 +45,17 @@ function AlbumDetailsPage() {
                     <h3 className="sub-heading details__sub-heading">all songs</h3>
                     <div className="album-list">
                         {album.songs.length > 0 ? (
-                            album.songs.map((song, index) => (
-                                <article key={index} className="album-list-card">
-                                    <FaPlay className="playlist-info__icon" />
-                                    <div>
-                                        <h4 className="sub-heading">{song.title}</h4>
-                                        <p className="text">{song.artist}</p>
-                                    </div>
-                                    <p className="text album-list-card__text">{calculateDuration(song.duration)}</p>
-                                </article>
+                            album.songs.map(song => (
+                                <Link to={`/playing/${song.id}`} key={song.id}>
+                                    <article className="album-list-card">
+                                        <FaPlay className="playlist-info__icon" />
+                                        <div>
+                                            <h4 className="sub-heading">{song.title}</h4>
+                                            <p className="text">{song.artist}</p>
+                                        </div>
+                                        <p className="text album-list-card__text">{calculateDuration(song.duration)}</p>
+                                    </article>
+                                </Link>
                             ))
                         ) : <p className='text'>No songs found...</p>}
                     </div>
