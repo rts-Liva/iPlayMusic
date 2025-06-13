@@ -3,22 +3,11 @@ import { FaPlay } from "react-icons/fa6";
 import Header from "../../components/header";
 import details from "../../../json/details.json";
 import Footer from "../../components/footer";
+import CalculateDuration from "../../components/calculate-duration";
 
 function AlbumDetailsPage() {
     const { id } = useParams();
     const album = details?.albums[id - 1];
-
-    function calculateDuration(duration) {
-        // Converts seconds into minutes.
-        const durationInMinutes = duration / 60;
-        // Grabs only the full minute (ignores decimals)
-        const minutes = Math.trunc(durationInMinutes);
-        // Converts the leftover decimals back into seconds.
-        const seconds = Math.round((durationInMinutes - minutes) * 60);
-
-        // padStart makes sure there will always be 2 digits (m:06 rather than m:6)
-        return `${minutes}:${seconds.toString().padStart(2, '0')}`;
-    }
 
     return (
         <>
@@ -53,7 +42,7 @@ function AlbumDetailsPage() {
                                             <h4 className="sub-heading">{song.title}</h4>
                                             <p className="text">{song.artist}</p>
                                         </div>
-                                        <p className="text album-list-card__text">{calculateDuration(song.duration)}</p>
+                                        <p className="text album-list-card__text">{CalculateDuration(song.duration)}</p>
                                     </article>
                                 </Link>
                             ))
