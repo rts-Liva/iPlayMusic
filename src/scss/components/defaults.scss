@@ -7,8 +7,8 @@
     text-transform: capitalize;
 
     &--gradient {
-        background: root.$gradient;
-        -webkit-background: root.$gradient;
+        background: root.$text-gradient;
+        -webkit-background: root.$text-gradient;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
