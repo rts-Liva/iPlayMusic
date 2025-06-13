@@ -1,8 +1,9 @@
 import { useParams } from "react-router";
 import { MdSkipNext, MdSkipPrevious } from "react-icons/md";
+import { FaBackward, FaForward, FaPlay } from "react-icons/fa";
 import Header from "../../components/header";
 import songs from "../../../json/songs.json";
-import { FaBackward, FaForward, FaPlay } from "react-icons/fa";
+import SvgGradient from "../../components/svg-gradient";
 
 function MediaPlayerPage() {
     const { id } = useParams();
@@ -22,12 +23,7 @@ function MediaPlayerPage() {
 
     return (
         <>
-            <svg width='0' height='0' className="footer__gradient">
-                <linearGradient id="gradient" x1='0%' y1='0%' x2='100%' y2='0%'>
-                    <stop stopColor="#EE0979" offset='0%' />
-                    <stop stopColor="#F2BC06" offset='100%' />
-                </linearGradient>
-            </svg>
+            <SvgGradient />
             <Header search={false}>playing</Header>
             <main className="music">
                 <img src={song.cover} alt={`${song.title} cover`} className="music__cover" />
