@@ -24,7 +24,7 @@ body.darkmode .genre-list__subgenre-icon {
         flex-direction: column;
         gap: 1rem;
 
-        details {
+        &__details {
             @for $i from 1 through 100 {
                 &:nth-child(#{$i}) {
                     .genre-list__name {
