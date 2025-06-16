@@ -8,7 +8,7 @@ function UpdateDarkmode(colourTheme) {
     }
 
     useEffect(() => {
-        if (colourTheme === 'true') {
+        if (colourTheme) {
             document.body.classList.add('darkmode');
         } else {
             document.body.classList.remove('darkmode');

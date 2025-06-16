@@ -8,7 +8,7 @@ import SvgGradient from "./svg-gradient";
 import UpdateDarkmode from "./update-darkmode";
 
 function Footer({ current }) {
-    const colourTheme = localStorage.getItem('darkmode');
+    const colourTheme = JSON.parse(localStorage.getItem('darkmode'));
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
     if (colourTheme === null) {
@@ -16,7 +16,7 @@ function Footer({ current }) {
     }
     
     const [darkmode, setDarkmode] = useState(
-        colourTheme !== null ? colourTheme === 'true' : systemPrefersDark
+        colourTheme !== null ? colourTheme : systemPrefersDark
     );
 
     function toggleTheme() {
