@@ -24,7 +24,7 @@
             fill: url(#gradient);
 
             &.featured {
-                fill: root.$primary-white !important;
+                fill: root.$primary-white;
                 background: root.$gradient;
                 padding: .3rem;
                 border-radius: 50%;

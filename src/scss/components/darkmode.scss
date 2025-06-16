@@ -30,8 +30,9 @@ body.darkmode {
         box-shadow: 0px -5px 5px root.$secondary-black-transparent;
 
         &-menu__icon {
-            &.featured {
-                fill: root.$primary-black !important;
+            &.featured.active {
+                fill: url(#gradient);
+                background: root.$primary-white;
             }
 
             &.active {
