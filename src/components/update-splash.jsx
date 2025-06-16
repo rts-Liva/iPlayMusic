@@ -17,7 +17,7 @@ function UpdateSplash(setShowSplashscreen, showSplashscreen) {
             setShowSplashscreen(false);
             // Update localStorage for next time app is mounted
             localStorage.setItem('showedSplashscreen', JSON.stringify(true));
-            navigate('/');
+            navigate('/walk-through');
         }, 3000);
 
     }, []);
