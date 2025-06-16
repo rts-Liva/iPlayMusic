@@ -5,10 +5,8 @@ import details from "../../../json/details.json";
 import Footer from "../../components/footer";
 import CalculateDuration from "../../components/calculate-duration";
 import Player from "../../components/player";
-import { useState } from "react";
 
 function AlbumDetailsPage() {
-    const [playingSong, setPlayingSong] = useState();
     const { id } = useParams();
     const album = details?.albums[id - 1];
 
@@ -19,7 +17,7 @@ function AlbumDetailsPage() {
                 <div className="details">
                     <img src={album.imagePath} alt={`${album.title} cover`} className="details__cover" />
                     <section>
-                        <h2 className="heading">{album.title}</h2>
+                        <h2 className="heading heading--light">{album.title}</h2>
                         <p className="sub-heading sub-heading--light">{album.songs.length} songs</p>
                     </section>
                     <div>

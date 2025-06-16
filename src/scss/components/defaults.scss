@@ -3,15 +3,18 @@
 .heading {
     font-size: 2.25em;
     font-weight: 600;
-    color: root.$typeography-secondary;
     text-transform: capitalize;
-
+    
     &--gradient {
         background: root.$text-gradient;
         -webkit-background: root.$text-gradient;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+    }
+    
+    &--light {
+        color: root.$typeography-secondary;
     }
 }
 

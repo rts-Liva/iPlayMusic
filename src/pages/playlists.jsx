@@ -47,10 +47,10 @@ function PlayListsPage() {
 
     return (
         <>
-            <Header colour="light" navigateReturn={false}>playlists</Header>
             <div className="background"></div>
+            <Header colour="light" navigateReturn={false}>playlists</Header>
             <main className="playlist">
-                <h2 className="heading">playlists</h2>
+                <h2 className="heading heading--light">playlists</h2>
                 <div
                     className="playlist-slider"
                     ref={sliderRef}
