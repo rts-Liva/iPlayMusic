@@ -45,6 +45,11 @@ function PlayListsPage() {
 
     const playlist = playlists?.list[activeIndex];
 
+    function newPlaying(id) {
+        localStorage.setItem('playing', id);
+        window.dispatchEvent(new Event('localStorageChange'));
+    }
+
     return (
         <>
             <div className="background"></div>
@@ -73,7 +78,7 @@ function PlayListsPage() {
                     <div className="album-list">
                         {playlist.songs.length > 0 ? (
                             playlist.songs.map(song => (
-                                <article className="album-list-card" key={song.id} onClick={() => localStorage.setItem('playing', song.id)}>
+                                <article className="album-list-card" key={song.id} onClick={() => newPlaying(song.id)}>
                                     <FaPlay className="playlist-info__icon" />
                                     <div>
                                         <h4 className="sub-heading">{song.title}</h4>

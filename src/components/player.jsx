@@ -1,10 +1,28 @@
 import { FaPlay } from "react-icons/fa6";
 import { Link } from "react-router";
+import { useEffect, useState } from "react";
 import songs from "../../json/songs.json";
 
 function Player() {
-    const id = Number(localStorage.getItem('playing'));
-    const song = songs?.songs[id - 1] || null;
+    const id = localStorage.getItem('playing');
+    const [song, setSong] = useState(
+        () => songs?.songs[id - 1] || null
+    );
+    
+    useEffect(() => {
+        function updatePlaying() {
+            const playing = localStorage.getItem('playing');
+            if (playing === null) return;
+
+            setSong(() => songs?.songs[Number(playing) - 1]);
+        }
+
+        window.addEventListener('localStorageChange', updatePlaying)
+
+        return () => {
+            window.removeEventListener('localStorageChange', updatePlaying)
+        }
+    }, []);
 
     return (
         song && (

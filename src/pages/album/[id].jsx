@@ -10,6 +10,11 @@ function AlbumDetailsPage() {
     const { id } = useParams();
     const album = details?.albums[id - 1];
 
+    function newPlaying(id) {
+        localStorage.setItem('playing', id);
+        window.dispatchEvent(new Event('localStorageChange'));
+    }
+
     return (
         <>
             <Header colour="light" search={false}>album</Header>
@@ -36,7 +41,7 @@ function AlbumDetailsPage() {
                     <div className="album-list">
                         {album.songs.length > 0 ? (
                             album.songs.map(song => (
-                                <article className="album-list-card" onClick={() => localStorage.setItem('playing', song.id)} key={song.id}>
+                                <article className="album-list-card" onClick={() => newPlaying(song.id)} key={song.id}>
                                     <FaPlay className="playlist-info__icon" />
                                     <div>
                                         <h4 className="sub-heading">{song.title}</h4>
