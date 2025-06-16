@@ -1,15 +1,5 @@
 @use '../placeholders/root.scss';
 
-body.darkmode .header {
-    &__icon {
-        color: root.$primary-white;
-    }
-
-    &__title {
-        color: root.$typeography-secondary;
-    }
-}
-
 .header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

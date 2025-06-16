@@ -1,24 +1,5 @@
 @use '../placeholders/root.scss';
 
-body.darkmode .footer {
-    background-color: root.$secondary-black;
-    box-shadow: 0px -5px 5px root.$secondary-black-transparent;
-
-    &-menu__icon {
-        &.featured {
-            fill: root.$primary-black !important;
-        }
-
-        &.active {
-            fill: root.$primary-white;
-        }
-
-        &.darkmode-btn {
-            transform: rotate(180deg);
-        }
-    }
-}
-
 .footer {
     background-color: root.$primary-white;
     position: fixed;
