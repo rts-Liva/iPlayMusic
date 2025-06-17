@@ -2,9 +2,9 @@ import { useParams } from "react-router";
 import { FaPlay } from "react-icons/fa6";
 import Header from "../../components/header";
 import details from "../../../json/details.json";
-import Footer from "../../components/footer";
 import CalculateDuration from "../../components/calculate-duration";
 import Player from "../../components/player";
+import Footer from "../../components/footer";
 
 function AlbumDetailsPage() {
     const { id } = useParams();

@@ -4,17 +4,17 @@ import { useEffect, useState } from "react";
 import songs from "../../json/songs.json";
 
 function Player() {
-    const id = localStorage.getItem('playing');
+    const id = JSON.parse(localStorage.getItem('playing'));
     const [song, setSong] = useState(
         () => songs?.songs[id - 1] || null
     );
-    
+
     useEffect(() => {
         function updatePlaying() {
-            const playing = localStorage.getItem('playing');
+            const playing = JSON.parse(localStorage.getItem('playing'));
             if (playing === null) return;
 
-            setSong(() => songs?.songs[Number(playing) - 1]);
+            setSong(() => songs?.songs[playing - 1]);
         }
 
         window.addEventListener('localStorageChange', updatePlaying)

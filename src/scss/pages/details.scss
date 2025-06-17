@@ -7,17 +7,6 @@
     height: 13rem;
     margin-bottom: 4rem;
 
-    &__cover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 20rem;
-        object-fit: cover;
-        z-index: -1;
-    }
-
     &::after {
         content: '';
         position: absolute;
@@ -26,6 +15,17 @@
         width: 100%;
         height: 20rem;
         background: root.$black-gradient;
+        z-index: -1;
+    }
+
+    &__cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 20rem;
+        object-fit: cover;
         z-index: -1;
     }
 

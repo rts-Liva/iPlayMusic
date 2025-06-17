@@ -2,9 +2,9 @@ import { useRef, useState } from "react";
 import { FaPlay } from "react-icons/fa6";
 import Header from "../components/header";
 import playlists from "../../json/playlists.json";
-import Footer from "../components/footer";
 import CalculateDuration from "../components/calculate-duration";
 import Player from "../components/player";
+import Footer from "../components/footer";
 
 function PlayListsPage() {
     const [touchStart, setTouchStart] = useState(null);
@@ -32,10 +32,11 @@ function PlayListsPage() {
         const isRightSwipe = distance < -minSwipeDistance;
 
         if (isLeftSwipe && activeIndex < playlists.list.length - 1) {
-            setActiveIndex(prev => prev + 1);
+            setActiveIndex(activeIndex + 1);
         }
+
         if (isRightSwipe && activeIndex > 0) {
-            setActiveIndex(prev => prev - 1);
+            setActiveIndex(activeIndex - 1);
         }
 
         // Reset

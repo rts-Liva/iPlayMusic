@@ -1,8 +1,8 @@
 import { Link } from "react-router";
 import Header from "../components/header";
 import albums from "../../json/albums.json";
-import Footer from "../components/footer";
 import Player from "../components/player";
+import Footer from "../components/footer";
 
 function AlbumsPage() {
     return (

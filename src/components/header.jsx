@@ -6,7 +6,12 @@ function Header({ children: title, colour = 'dark', navigateReturn = true, searc
 
     return (
         <header className="header">
-            {navigateReturn && <IoIosArrowBack onClick={() => navigate(-1)} className={colour === 'dark' ? 'header__icon' : 'header__icon header__icon--light'} />}
+            {navigateReturn && (
+                <IoIosArrowBack
+                    onClick={() => navigate(-1)}
+                    className={colour === 'dark' ? 'header__icon' : 'header__icon header__icon--light'}
+                />
+            )}
             <h1 className={colour === 'dark' ? 'header__title' : 'header__title header__title--light'}>{title}</h1>
             {search && <IoIosSearch className={colour === 'dark' ? 'header__icon' : 'header__icon header__icon--light'} />}
         </header>
