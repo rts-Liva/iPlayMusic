@@ -7,11 +7,19 @@
     bottom: 5rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: .5rem;
     padding: .3rem;
     padding-right: 1.5rem;
     background: root.$gradient;
     border-radius: .5rem;
+
+    &__info {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+        width: 90%;
+    }
 
     &__cover {
         width: 3rem;
@@ -21,7 +29,6 @@
     }
 
     &__play {
-        margin-left: auto;
         color: root.$primary-white;
     }
 }

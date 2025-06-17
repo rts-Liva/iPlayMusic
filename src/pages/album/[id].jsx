@@ -11,8 +11,8 @@ function AlbumDetailsPage() {
     const album = details?.albums[id - 1];
 
     function newPlaying(id) {
-        localStorage.setItem('playing', id);
-        window.dispatchEvent(new Event('localStorageChange'));
+        localStorage.setItem('playing', `${id}, playing`);
+        window.dispatchEvent(new Event('songPlayingChange'));
     }
 
     return (

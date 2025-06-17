@@ -47,8 +47,8 @@ function PlayListsPage() {
     const playlist = playlists?.list[activeIndex];
 
     function newPlaying(id) {
-        localStorage.setItem('playing', id);
-        window.dispatchEvent(new Event('localStorageChange'));
+        localStorage.setItem('playing', `${id}, playing`);
+        window.dispatchEvent(new Event('songPlayingChange'));
     }
 
     return (

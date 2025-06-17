@@ -1,14 +1,25 @@
 import { useParams } from "react-router";
 import { MdSkipNext, MdSkipPrevious } from "react-icons/md";
-import { FaBackward, FaForward, FaPlay } from "react-icons/fa";
+import { FaBackward, FaForward, FaPause, FaPlay } from "react-icons/fa";
+import { useState } from "react";
 import Header from "../../components/header";
 import songs from "../../../json/songs.json";
 import SvgGradient from "../../components/svg-gradient";
 import CalculateDuration from "../../components/calculate-duration";
+import UpdatePlaying from "../../components/update-playing";
 
 function MediaPlayerPage() {
+    const paused = localStorage.getItem('playing')?.split(', ')[1];
+    const [isPaused, setIsPaused] = useState(paused === 'paused');
     const { id } = useParams();
     const song = songs?.songs[id - 1];
+
+    UpdatePlaying(setIsPaused);
+
+    function togglePlaying(mode) {
+        localStorage.setItem('playing', `${id}, ${mode}`);
+        window.dispatchEvent(new Event('songModeChange'));
+    }
 
     return (
         <>
@@ -26,7 +37,18 @@ function MediaPlayerPage() {
                 <div className="music-control">
                     <MdSkipPrevious className="music-control__btn music-control__btn--gradient" />
                     <FaBackward className="music-control__btn" />
-                    <FaPlay className="music-control__btn music-control__btn--center" />
+                    {!isPaused && (
+                        <FaPlay
+                            className="music-control__btn music-control__btn--center play"
+                            onClick={() => togglePlaying('paused')}
+                        />
+                    )}
+                    {isPaused && (
+                        <FaPause
+                            className="music-control__btn music-control__btn--center"
+                            onClick={() => togglePlaying('playing')}
+                        />
+                    )}
                     <FaForward className="music-control__btn" />
                     <MdSkipNext className="music-control__btn music-control__btn--gradient" />
                 </div>

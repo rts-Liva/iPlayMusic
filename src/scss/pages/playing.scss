@@ -53,7 +53,7 @@
             fill: root.$primary-black;
 
             &--gradient {
-                fill: url(#gradient);
+                fill: url(#gradient) !important;
             }
 
             &--center {
@@ -61,8 +61,11 @@
                 font-size: 4.5em;
                 background: root.$gradient;
                 padding: 1rem .2rem;
-                padding-left: .6rem;
                 border-radius: 50%;
+
+                &.play {
+                    padding-left: .6rem;
+                }
             }
         }
     }
