@@ -15,8 +15,8 @@ function UpdateSplash(setShowSplashscreen, showSplashscreen) {
         setTimeout(() => {
             // Update local state to trigger component rerender
             setShowSplashscreen(false);
-            // Update localStorage for next time app is mounted
-            localStorage.setItem('showedSplashscreen', JSON.stringify(true));
+            // Update sessionStorage for next time app is mounted
+            sessionStorage.setItem('showedSplashscreen', JSON.stringify(true));
             navigate('/walk-through');
         }, 3000);
 

@@ -7,7 +7,7 @@ import './scss/style.scss';
 
 function App() {
   const [showSplashscreen, setShowSplashscreen] = useState(
-    () => !JSON.parse(localStorage.getItem('showedSplashscreen'))
+    () => !JSON.parse(sessionStorage.getItem('showedSplashscreen'))
   );
   const colourTheme = JSON.parse(localStorage.getItem('darkmode'));
 
