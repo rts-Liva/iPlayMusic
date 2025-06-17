@@ -17,7 +17,8 @@
 .playlist {
     padding-inline: 0;
 
-    .playlist-info, .heading {
+    .playlist-info,
+    .heading {
         margin-inline: 1.5rem;
     }
 
@@ -56,10 +57,20 @@
                 opacity: 1;
             }
 
+            &.outside-prev {
+                left: 0;
+                transform: scale(.65) translateX(-125%);
+            }
+
             &.next {
                 right: 0;
                 transform: scale(.65) translateX(50%);
                 opacity: 1;
+            }
+
+            &.outside-next {
+                right: 0;
+                transform: scale(.65) translateX(125%);
             }
         }
     }

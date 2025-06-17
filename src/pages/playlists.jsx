@@ -51,6 +51,30 @@ function PlayListsPage() {
         window.dispatchEvent(new Event('songPlayingChange'));
     }
 
+    function slidePosition(index) {
+        switch (activeIndex) {
+            // If activeIndex is equal to index.
+            case index:
+                return 'active';
+
+            // If activeIndex is 1 bigger than index.
+            case index + 1:
+                return 'prev';
+
+            // If activeIndex is 1 smaller than index.
+            case index - 1:
+                return 'next';
+        }
+
+        if (activeIndex > index) {
+            return 'outside-prev';
+        }
+
+        if (activeIndex < index) {
+            return 'outside-next';
+        }
+    }
+
     return (
         <>
             <div className="background"></div>
@@ -70,7 +94,7 @@ function PlayListsPage() {
                                 src={playlist.cover}
                                 alt={`${playlist.name} cover`}
                                 key={playlist.id}
-                                className={`playlist-slider__cover ${index === activeIndex ? 'active' : index < activeIndex ? 'prev' : 'next'}`} />
+                                className={`playlist-slider__cover ${slidePosition(index)}`} />
                         ))
                     ) : <p className="text">No playlists found...</p>}
                 </div>
