@@ -1,6 +1,12 @@
 @use '../placeholders/root.scss';
 
 .album {
+    padding-inline: 0;
+
+    .heading, .album-menu, .album-list {
+        margin-inline: 1.5rem;
+    }
+
     &-menu {
         display: flex;
         justify-content: space-between;
@@ -24,6 +30,8 @@
         scroll-snap-type: x mandatory;
         scrollbar-width: none;
         padding: .3rem;
+        padding-left: 0;
+        margin-left: 1.5rem;
 
         &__cover {
             width: 8rem;

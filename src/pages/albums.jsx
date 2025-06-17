@@ -8,7 +8,7 @@ function AlbumsPage() {
     return (
         <>
             <Header navigateReturn={false}>music</Header>
-            <main>
+            <main className="album">
                 <h2 className="heading heading--gradient">all albums</h2>
                 <div>
                     <section className="album-menu">
