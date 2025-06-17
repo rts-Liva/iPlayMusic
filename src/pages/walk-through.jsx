@@ -3,9 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import { IoIosMusicalNote } from "react-icons/io";
 import { useNavigate } from "react-router";
 import { useEffect, useState } from "react";
-import StepOne from "../components/step-one";
-import StepTwo from "../components/step-two";
-import StepThree from "../components/step-three";
+import SlideElement from "../components/slide-element";
 
 function WalkThroughPage() {
     const [activeSlide, setActiveSlide] = useState(1);
@@ -25,9 +23,9 @@ function WalkThroughPage() {
         <main className="walkthrough">
             <img src="/badges.svg" alt="background pattern" className="walkthrough__image" />
             <div className="walkthrough__slider">
-                <StepOne activeSlide={activeSlide} />
-                <StepTwo activeSlide={activeSlide} />
-                <StepThree activeSlide={activeSlide} />
+                <SlideElement activeSlide={activeSlide} number={1}>where words fail,<br />music speaks</SlideElement>
+                <SlideElement activeSlide={activeSlide} number={2}>no music<br />no life</SlideElement>
+                <SlideElement activeSlide={activeSlide} number={3}>peace love<br />music</SlideElement>
             </div>
             <div className="walkthrough__steps">
                 <BsSoundwave
