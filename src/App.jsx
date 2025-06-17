@@ -9,11 +9,9 @@ function App() {
   const [showSplashscreen, setShowSplashscreen] = useState(
     () => !JSON.parse(localStorage.getItem('showedSplashscreen'))
   );
-
   const colourTheme = JSON.parse(localStorage.getItem('darkmode'));
 
   UpdateDarkmode(colourTheme);
-
   UpdateSplash(setShowSplashscreen, showSplashscreen);
 
   return (

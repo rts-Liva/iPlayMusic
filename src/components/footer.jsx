@@ -9,18 +9,13 @@ import UpdateDarkmode from "./update-darkmode";
 
 function Footer({ current }) {
     const colourTheme = JSON.parse(localStorage.getItem('darkmode'));
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-    if (colourTheme === null) {
-        localStorage.setItem('darkmode', systemPrefersDark);
-    }
-    
-    const [darkmode, setDarkmode] = useState(
-        colourTheme !== null ? colourTheme : systemPrefersDark
-    );
+    const [darkmode, setDarkmode] = useState(colourTheme);
 
     function toggleTheme() {
-        setDarkmode(prev => !prev);
+        // If we pretend initial value is false,
+        // Schedules darkmode to become true.
+        setDarkmode(!darkmode);
+        // Uses the current value (false) and negates it.
         localStorage.setItem('darkmode', !darkmode);
     }
 
