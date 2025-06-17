@@ -38,5 +38,11 @@ Din gruppe skal planlægge arbejdet nøje og tracke jeres fremskridt. Det betyde
 ### Hvis du har ekstra tid
 Hvis du har ekstra tid i slutningen af ugen, kan du tilføje splash-skærmen og walk-through delen. 
 
+### Redegørelse af ændring i design
+Jeg har fjernet return knappen på parent siderne. Dvs. de sider man kommer ind på når man navigere i footeren.
+Dette gjorde jeg for at skabe en mere intuitiv brugeroplevelse, der giver mere mening.
+
+Jeg har ændret darkmode styling på splashscreen for at vedligeholde det med resten af designet.
+
 # Tidsramme
 Der er afsat 1 arbejds uge til layout-delen, dvs aflevering på fredag kl 13.30 (den sidste commit til github inden fredag kl 13.30, bliver afleveringen).
