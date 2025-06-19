@@ -1,0 +1,126 @@
+import { useRef, useState } from "react";
+import { FaPlay } from "react-icons/fa6";
+import Header from "../components/header";
+import playlists from "../../json/playlists.json";
+import CalculateDuration from "../components/calculate-duration";
+import Player from "../components/player";
+import Footer from "../components/footer";
+
+function PlayListsPage() {
+    const [touchStart, setTouchStart] = useState(null);
+    const [touchEnd, setTouchEnd] = useState(null);
+    const [activeIndex, setActiveIndex] = useState(1);
+    const sliderRef = useRef(null);
+
+    // Minimum swipe distance (in px)
+    const minSwipeDistance = 20;
+
+    function onTouchStart(e) {
+        setTouchEnd(null);
+        setTouchStart(e.targetTouches[0].clientX);
+    };
+
+    function onTouchMove(e) {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    function onTouchEnd() {
+        if (!touchStart || !touchEnd) return;
+
+        const distance = touchStart - touchEnd;
+        const isLeftSwipe = distance > minSwipeDistance;
+        const isRightSwipe = distance < -minSwipeDistance;
+
+        if (isLeftSwipe && activeIndex < playlists.list.length - 1) {
+            setActiveIndex(activeIndex + 1);
+        }
+
+        if (isRightSwipe && activeIndex > 0) {
+            setActiveIndex(activeIndex - 1);
+        }
+
+        // Reset
+        setTouchStart(null);
+        setTouchEnd(null);
+    };
+
+    const playlist = playlists?.list[activeIndex];
+
+    function newPlaying(id) {
+        localStorage.setItem('playing', `${id}, playing`);
+        window.dispatchEvent(new Event('songPlayingChange'));
+    }
+
+    function slidePosition(index) {
+        switch (activeIndex) {
+            // If activeIndex is equal to index.
+            case index:
+                return 'active';
+
+            // If activeIndex is 1 bigger than index.
+            case index + 1:
+                return 'prev';
+
+            // If activeIndex is 1 smaller than index.
+            case index - 1:
+                return 'next';
+        }
+
+        if (activeIndex > index) {
+            return 'outside-prev';
+        }
+
+        if (activeIndex < index) {
+            return 'outside-next';
+        }
+    }
+
+    return (
+        <>
+            <div className="background"></div>
+            <Header colour="light" navigateReturn={false}>playlists</Header>
+            <main className="playlist">
+                <h2 className="heading heading--light">playlists</h2>
+                <div
+                    className="playlist-slider"
+                    ref={sliderRef}
+                    onTouchStart={onTouchStart}
+                    onTouchMove={onTouchMove}
+                    onTouchEnd={onTouchEnd}
+                >
+                    {playlists?.list?.length > 0 ? (
+                        playlists?.list?.map((playlist, index) => (
+                            <img
+                                src={playlist.cover}
+                                alt={`${playlist.name} cover`}
+                                key={playlist.id}
+                                className={`playlist-slider__cover ${slidePosition(index)}`} />
+                        ))
+                    ) : <p className="text">No playlists found...</p>}
+                </div>
+                <section className="playlist-info">
+                    <h3 className="playlist-info__name">{playlist.name}</h3>
+                    <div className="album-list">
+                        {playlist.songs.length > 0 ? (
+                            playlist.songs.map(song => (
+                                <article className="album-list-card" key={song.id} onClick={() => newPlaying(song.id)}>
+                                    <FaPlay className="playlist-info__icon" />
+                                    <div>
+                                        <h4 className="sub-heading">{song.title}</h4>
+                                        <p className="text">{song.artist}</p>
+                                    </div>
+                                    <p className="text album-list-card__text">{CalculateDuration(song.duration)}</p>
+                                </article>
+                            ))
+                        ) : <p className='text'>No songs found...</p>}
+                    </div>
+                    <button className="playlist-info__btn">listen all</button>
+                </section>
+            </main>
+            <Player />
+            <Footer current='playlists' />
+        </>
+    );
+}
+
+export default PlayListsPage;
